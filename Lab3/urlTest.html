@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Test</title>
+  <title>test</title>
   <script>
   //grab the url in the location bar
-  var searchString = searchString.substring(1);
+  var searchString = document.locaiton.search;
+
+  //strip off the leading '?'
+  searchString = searchString.substring(1);
 
   //split string of arguements into name=value pairs
   var nvParis = searchString.split("&");
