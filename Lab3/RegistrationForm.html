@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <meta charset="utf-8">
+  <title>MoggyBook</title>
+
+  <script>
+  function testResults(form) {
+    var username = form.username.value;
+    alert ("You registered: " + username +", ");
+  }
+  </script>
+</head>
+<body>
+  <h1>Moggybook!</h1>
+
+  <form>
+    <table border="0" cellscpacing="5" cellpadding="5">
+      <tr>
+        <td>Username:</td>
+      <td>
+        <input type="textarea" name="username">
+      </td>
+    </tr>
+
+    <tr>
+      <td> *** element label *** </td>
+      <td> *** element label *** </td>
+    </tr>
+  </table>
+  <input type="subtmit" name="submit" value="submit" onClick="testResults(this.form)" />
+</form>
+</body>
+</html>
