@@ -63,6 +63,6 @@ html {
 
 @media only screen and (min-width: 600px - 768px) {
     /* for tablet */
-    .col-3 {width:75%;}
-    .col-6 {width:75%;}
+    .col-3 {width:100%;}
+    .col-6 {width:100%;}
 }
