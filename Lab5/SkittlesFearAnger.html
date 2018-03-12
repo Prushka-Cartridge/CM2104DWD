@@ -10,10 +10,19 @@
     <p>Anger</p>
 
     <script>
+      var paragraphs = document.body.getElementsByTagName("p");
+      document.body.insertBefore(paragraphs[2], paragraphs[0]);
+
       var newPara = document.createElement("p");
       var text = document.createTextNode("A Jedi craves not these things");
       newPara.appendChild(text);
       document.body.appendChild(newPara);
+
+      var replacement = document.createElement("p");
+      var text2 = document.createTextNode("Aggression");
+      replacement.appendChild(text2);
+      document.body.replaceChild(replacement,paragraphs[1]);
+
     </script>
     </body>
 </html>
